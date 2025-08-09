@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+#header-img {
+  height: 50px;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #1abc9c;
+}
+
+/* Sections */
+section {
+  padding: 100px 20px;
+}
+
+#hero {
+  text-align: center;
+  margin-top: 80px;
+}
+
+#form {
+  margin-top: 20px;
+}
+
+#email {
+  padding: 8px;
+  width: 250px;
+  max-width: 100%;
+}
+
+#submit {
+  padding: 8px 15px;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #16a085;
+}
+
+/* Pricing Flexbox */
+.price-container {
+  display: flex; /* flexbox usage */
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.price-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  #nav-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .price-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
