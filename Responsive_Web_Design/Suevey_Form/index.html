@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">
+            Survey Form
+        </h1>
+        <p id="description">
+            Survey form for free code camp's certification
+        </p>
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <input required type="text" placeholder="enter your name" id="name">
+            <label for="email" id="email-label">Email</label>
+            <input required type="email" placeholder="Enter your e-mail" id="email">
+            <label for="number" id="number-label">Phone Number</label>
+            <input type="number" placeholder="Enter phone number" min="1" max="11" minlength="10" maxlength="11" id="number">
+            <select class="dropdown" id="dropdown">
+                <option value="Select your gender" disabled selected>Select your gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <input type="radio" value="agree" name="terms">I agree to terms & conditions
+            <input type="radio" value="not agree" name="terms">I do not agree to terms & conditions
+
+            <p>Select your hobby:</p>
+            <label><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+            <label><input type="checkbox" name="hobbies" value="traveling"> Traveling</label>
+            <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Enter your comments here..." rows="4" cols="50"></textarea>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+/* Page background & font */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centered container */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+#title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+#description {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Form labels */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* Inputs, selects, textarea */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #3498db;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Radio & checkbox styling */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Inline radio terms */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    font-weight: normal;
+}
+
+/* Textarea resize limit */
+textarea {
+    resize: vertical;
+}
+
+/* Hobby checkboxes inline */
+p + label {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Submit button */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
