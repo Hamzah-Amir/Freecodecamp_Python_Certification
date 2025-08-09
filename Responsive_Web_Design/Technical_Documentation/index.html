@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Python & DSA Documentation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <header>Python & DSA Guide</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Python_Basics">Python Basics</a>
+    <a class="nav-link" href="#Data_Structures">Data Structures</a>
+    <a class="nav-link" href="#Algorithms">Algorithms</a>
+    <a class="nav-link" href="#Advanced_Topics">Advanced Topics</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-doc">
+
+    <!-- Section 1 -->
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>Python is a high-level, interpreted programming language known for its readability and versatility.</p>
+      <p>DSA (Data Structures & Algorithms) is the backbone of efficient programming.</p>
+      <p>This guide introduces both Python syntax and fundamental DSA concepts.</p>
+      <p>Learning DSA in Python helps bridge theory with practical coding skills.</p>
+      <p>We will use Python examples to demonstrate various algorithms and data handling techniques.</p>
+      <ul>
+        <li>Easy to learn</li>
+        <li>Large community support</li>
+        <li>Rich standard library</li>
+      </ul>
+      <code>print("Welcome to Python & DSA")</code>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="main-section" id="Python_Basics">
+      <header>Python Basics</header>
+      <p>Python uses indentation instead of braces to define code blocks.</p>
+      <p>Variables are dynamically typed; no need to declare types explicitly.</p>
+      <p>Comments start with the <code>#</code> symbol.</p>
+      <p>Strings can be enclosed in single or double quotes.</p>
+      <p>Functions are defined using the <code>def</code> keyword.</p>
+      <ul>
+        <li>Data Types: int, float, str, bool</li>
+        <li>Control Flow: if, elif, else</li>
+        <li>Loops: for, while</li>
+      </ul>
+      <code>x = 5</code>
+      <code>if x > 0: print("Positive")</code>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="main-section" id="Data_Structures">
+      <header>Data Structures</header>
+      <p>Data structures are ways to store and organize data for efficient access and modification.</p>
+      <p>Python’s built-in data structures include lists, tuples, sets, and dictionaries.</p>
+      <p>Lists are ordered and mutable collections.</p>
+      <p>Tuples are ordered but immutable collections.</p>
+      <p>Sets are unordered collections of unique elements.</p>
+      <ul>
+        <li>List: <code>my_list = [1, 2, 3]</code></li>
+        <li>Tuple: <code>my_tuple = (1, 2, 3)</code></li>
+        <li>Set: <code>my_set = {1, 2, 3}</code></li>
+      </ul>
+      <code>my_dict = {"key": "value"}</code>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="main-section" id="Algorithms">
+      <header>Algorithms</header>
+      <p>An algorithm is a step-by-step method to solve a problem.</p>
+      <p>Sorting algorithms arrange data in a specific order.</p>
+      <p>Searching algorithms find specific data within a structure.</p>
+      <p>Python has built-in sorting functions, but learning classic algorithms builds problem-solving skills.</p>
+      <p>Example: Bubble sort repeatedly swaps adjacent elements if they are in the wrong order.</p>
+      <ul>
+        <li>Bubble Sort</li>
+        <li>Binary Search</li>
+        <li>Merge Sort</li>
+      </ul>
+      <code>
+def bubble_sort(arr):
+    for i in range(len(arr)):
+        for j in range(0, len(arr)-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+      </code>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="main-section" id="Advanced_Topics">
+      <header>Advanced Topics</header>
+      <p>Recursion is when a function calls itself to solve smaller instances of a problem.</p>
+      <p>Dynamic Programming optimizes recursive solutions by storing results of subproblems.</p>
+      <p>Graph algorithms solve problems related to connected data.</p>
+      <p>Time complexity measures algorithm efficiency.</p>
+      <p>Space complexity measures the memory used by an algorithm.</p>
+      <ul>
+        <li>DFS (Depth First Search)</li>
+        <li>BFS (Breadth First Search)</li>
+        <li>Dijkstra’s Algorithm</li>
+      </ul>
+      <code>
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n-1)
+      </code>
+    </section>
+
+  </main>
+
+</body>
+</html>
