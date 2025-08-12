@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Previewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div>
+<textarea id="editor">
+# Heading 1
+
+## Heading 2
+
+This is **bold** text with a [link](https://www.example.com).
+
+Inline code: `const x = 10;`
+
+```javascript
+// Code block
+function greet() {
+  console.log("Hello World");
+}```
+
+### Important tips:  
+- The triple backticks **must be at the start of the line, no spaces before or after inside the textarea**.  
+- The list items need the `- ` or `* ` exactly, no extra spaces before the dash/star.  
+- Remove any indentation inside `<textarea>` tags around your markdown text (otherwise it’s read as spaces, breaking parsing).
+
+---
+
+If you want, I can give you a **clean, ready-to-paste `<textarea>` content** exactly like this. Would you like that?
+
+
+
+            </textarea>
+        </div>
+        <div id="preview"></div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.0/marked.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
