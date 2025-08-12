@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="drum-machine">
+  <h2>Pomodoro Clock</h2>
+  
+  <div class="length-control">
+    <div id="break-label">Break Length</div>
+    <button id="break-decrement">-</button>
+    <span id="break-length">5</span>
+    <button id="break-increment">+</button>
+  </div>
+
+  <div class="length-control">
+    <div id="session-label">Session Length</div>
+    <button id="session-decrement">-</button>
+    <span id="session-length">25</span>
+    <button id="session-increment">+</button>
+  </div>
+
+  <div id="timer">
+    <div id="timer-label">Session</div>
+    <div id="time-left">25:00</div>
+  </div>
+
+  <div class="controls">
+    <button id="start_stop">Start/Pause</button>
+    <button id="reset">Reset</button>
+  </div>
+
+  <audio id="beep" preload="auto" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"></audio>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
